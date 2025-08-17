@@ -212,8 +212,8 @@ function drawExplosions() {
 
 // Move stars
 function moveStars() {
-    // Double speed on stages that are multiples of 4
-    const currentStarSpeed = (stage % 4 === 0) ? starSpeed * 2 : starSpeed;
+    // 6x speed on stages that are multiples of 4
+    const currentStarSpeed = (stage % 4 === 0) ? starSpeed * 6 : starSpeed;
     
     for (let i = 0; i < stars.length; i++) {
         stars[i].y += currentStarSpeed;
